@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COD Backlog Courses</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/595ee49d77.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./Backlog-courses.css">
+</head>
+<body>
+  <div class="d-flex flex-column">
+    <div class="d-flex bg-danger w-100 justify-content-center text-white p-3">
+      <div><img src='https://pl.neduet.edu.pk/undergrad/images/NED_Logo.png' width=128 height=129></div>
+      <h2 class="p-4">NED UNIVERSITY OF ENGINEERING & TECHNOLOGY<span class='nl'>Undergraduate Students Interface</span></h2>
+    </div>
+    <div class="p-5 d-flex flex-column">
+      <div class="d-flex">
+        <h2>Backlog Courses For COD Students</h2>
+      </div>
+      <div class='d-flex pt-5 justify-content-evenly'>
+        <div>
+          <label for='current-dept'>From</label>
+          <select id='current-dept'>
+            <option value=1>Electronics Engineering</option>
+            <option value=2>Telecommunication Engineering</option>
+            <option value=3>Software Engineering</option>
+            <option value=4>Mechanical Engineering</option>
+            <option value=5>Civil Engineering</option>
+          </select>
+        </div>
+        <div>
+          <label for='changed-dept'>To</label>
+          <select id='changed-dept'>
+            <option value=1>Software Engineering</option>
+            <option value=2>Telecommunication Engineering</option>
+            <option value=3>Electronics Engineering</option>
+            <option value=4>Mechanical Engineering</option>
+            <option value=5>Civil Engineering</option>
+          </select>
+        </div>
+        <div>
+          <button type="button" class="btn btn-color" onclick="fillTable()">Submit</button>
+        </div>
+      </div>
+      <div class='d-flex justify-content-center'>
+        <table>
+          <tbody>
+            <tr class="header"><th>Courses To Be Studied</th></tr>
+            <tr>
+              <th colspan="4">Spring Semester</th>
+              <th colspan="4">Fall Semester</th>
+            </tr>
+            <tr>
+              <th>Course Code</th>
+              <th>Course Title</th>
+              <th colspan="2">Credit Hours</th>
+              <th>Course Code</th>
+              <th>Course Title</th>
+              <th colspan="2">Credit Hours</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <th>Th</th>
+              <th>Pr</th>
+              <td></td>
+              <td></td>
+              <th>Th</th>
+              <th>Pr</th>
+            </tr>
+            <tr>
+              <td class='crs1-code'>Null</td>
+              <td class='crs1-name'>Null</td>
+              <td class='crs1-credit-th'>Null</td>
+              <td class='crs1-credit-pr'>Null</td>
+              <td class='crs1-code-fall'>Null</td>
+              <td class='crs1-name-fall'>Null</td>
+              <td class='crs1-credit-th-fall'>Null</td>
+              <td class='crs1-credit-pr-fall'>Null</td>
+            </tr>
+            <tr>
+              <td class='crs2-code'>Null</td>
+              <td class='crs2-name'>Null</td>
+              <td class='crs2-credit-th'>Null</td>
+              <td class='crs2-credit-pr'>Null</td>
+              <td class='crs2-code-fall'>Null</td>
+              <td class='crs2-name-fall'>Null</td>
+              <td class='crs2-credit-th-fall'>Null</td>
+              <td class='crs2-credit-pr-fall'>Null</td>
+            </tr>
+            <tr>
+              <td class='crs3-code'>Null</td>
+              <td class='crs3-name'>Null</td>
+              <td class='crs3-credit-th'>Null</td>
+              <td class='crs3-credit-pr'>Null</td>
+              <td class='crs3-code-fall'>Null</td>
+              <td class='crs3-name-fall'>Null</td>
+              <td class='crs3-credit-th-fall'>Null</td>
+              <td class='crs3-credit-pr-fall'>Null</td>
+            </tr>
+            <tr>
+              <td class='crs4-code'>Null</td>
+              <td class='crs4-name'>Null</td>
+              <td class='crs4-credit-th'>Null</td>
+              <td class='crs4-credit-pr'>Null</td>
+              <td class='crs4-code-fall'>Null</td>
+              <td class='crs4-name-fall'>Null</td>
+              <td class='crs4-credit-th-fall'>Null</td>
+              <td class='crs4-credit-pr-fall'>Null</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer class="d-flex justify-content-evenly align-items-center bg-dark p-4 mt-5">
+      <a href='https://www.neduet.edu.pk/' class="text-decoration-none text-warning"><i class="fas fa-home"></i> NEDUET</a>
+      <a href='https://mail2.neduet.edu.pk/' class="text-decoration-none text-warning"><i class="fas fa-envelope"></i> Email</a>
+      <a href='https://www.neduet.edu.pk/institutional_policies' class="text-decoration-none text-warning"><i class="fas fa-list"></i> Institutional Policies</a>
+      <a href='https://www.neduet.edu.pk/quality_policy' class="text-decoration-none text-warning "><i class="fas fa-list-alt"></i> Quality Policy</a>
+    </footer>
+  </div>
+</body>
+<script>
+  const fillTable = () => {
+    for(var i = 0; i < 4; i++){
+      $(`.crs${i+1}-code`).html('');
+      $(`.crs${i+1}-name`).html('');
+      $(`.crs${i+1}-credit-th`).html('');
+      $(`.crs${i+1}-credit-pr`).html('');
+      $(`.crs${i+1}-code-fall`).html('');
+      $(`.crs${i+1}-name-fall`).html('');
+      $(`.crs${i+1}-credit-th-fall`).html('');
+      $(`.crs${i+1}-credit-pr-fall`).html('');
+    }
+    if (document.getElementById('current-dept').value == '1' && document.getElementById('changed-dept').value == '1'){
+      var courseCodes = ['SE-207', 'SE-201', 'HS-115', 'HS-205'];
+      var courseNames = ['Software Engineering', 'Object Oriented Concepts and Programming', 'Academic Reading and Writing', 'Islamic Studies'];
+      var thHours = ['3', '3', '3', '2'];
+      var prHours = ['0', '1', '0', '0'];
+      
+      var courseCodesFall = ['CT-175', 'CT-162'];
+      var courseNamesFall = ['Programming Fundamentals', 'Discrete Structures'];
+      var thHoursFall = ['3', '3'];
+      var prHoursFall = ['1', '0'];
+    }
+    else if (document.getElementById('current-dept').value == '2' && document.getElementById('changed-dept').value == '1'){
+      var courseCodes = ['SE-207', 'SE-201', 'HS-115', 'HS-205'];
+      var courseNames = ['Software Engineering', 'Object Oriented Concepts and Programming', 'Academic Reading and Writing', 'Islamic Studies'];
+      var thHours = ['3', '3', '3', '2'];
+      var prHours = ['0', '1', '0', '0'];
+      
+      var courseCodesFall = ['CT-162'];
+      var courseNamesFall = ['Discrete Structures'];
+      var thHoursFall = ['3'];
+      var prHoursFall = ['0'];
+    }
+    for(var i = 0; i < courseCodes.length; i++){
+      $(`.crs${i+1}-code`).html(`${courseCodes[i]}`);
+      $(`.crs${i+1}-name`).html(`${courseNames[i]}`);
+      $(`.crs${i+1}-credit-th`).html(`${thHours[i]}`);
+      $(`.crs${i+1}-credit-pr`).html(`${prHours[i]}`);
+    }
+    for(var i = 0; i < courseCodesFall.length; i++){
+      $(`.crs${i+1}-code-fall`).html(`${courseCodesFall[i]}`);
+      $(`.crs${i+1}-name-fall`).html(`${courseNamesFall[i]}`);
+      $(`.crs${i+1}-credit-th-fall`).html(`${thHoursFall[i]}`);
+      $(`.crs${i+1}-credit-pr-fall`).html(`${prHoursFall[i]}`);
+    }
+  }
+  
+</script>
+</html>

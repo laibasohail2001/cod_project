@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <script>
+    if(window.self !== window.top)
+        window.top.location.href = "";
+    </script>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>NEDUET Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Login Default_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Login Default_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./Login Default_files/style2.css">
+    <script src="./Login Default_files/jquery.min.js.download"></script>
+    <script src="./Login Default_files/bootstrap.min.js.download"></script>
+    <script src="https://kit.fontawesome.com/595ee49d77.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+      .bgimg { 
+        /* The image used */
+        background-image: url("./bg.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .tabcontent {
+        display: none;
+        padding: 0px 0px;
+        border-top: none;  
+        margin: 0px 0px;
+      }
+
+      .h4, .h5, .h6, h4, h5, h6 {
+          margin-top: 3px !important;
+          margin-bottom: 3px !important;
+      }
+      .form-group {
+          margin-bottom: 5px !important;
+      }
+
+      .h1, h1 {
+          font-size: 2em !important;
+      }
+
+      .button2 {
+        font-weight: bolder;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #337AB7;
+        display: block;
+        border-top-style: none;
+        border-right-style: none;
+        border-bottom-style: none;
+        border-left-style: none;
+        background-color: transparent;
+        font-family:Arial;
+        font-size:2em !important;
+        padding: 0px;
+        width: 100%;
+        font-size: small;
+      }
+
+      .button3 {
+        padding: 0px 0px;
+        font-weight: bolder;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #5CB85C;
+        border:none;
+      }
+    </style>
+  </head>
+  <body style="background-color:#0D0D0D">
+    <!-- Header -->
+    <div class="carousel  headerbar">
+      <div class="container">
+        <div style="width:100%;" align="center">
+          <img src="./Login Default_files/logohead.png" class="img-responsive">
+        </div>
+      </div>
+    </div>
+    <!-- Header End-->
+    <div class="carousel bgimg">
+    <!-- Login --> 
+    <div class="container" style="padding-top:5px; padding-bottom:5px;">
+    <div class="row">
+    <div class="col-sm-4"></div> 
+    <div class="col-sm-4 bg-white border-white" style="min-height:400px; border-radius: 25px;"> 
+    <div class="text-left ">
+
+    <div class="row">
+    <div align="center" class="col-sm-12 bg-red" style="min-height:50px; border-radius: 22px; background-image:url(https://pl.neduet.edu.pk/images/reddot.jpg);"><img src="./Login Default_files/portallogin.png" style="margin-top:9px;" class="img-responsive"></div>
+    </div>
+
+    <h5 class="text-justify red">
+
+
+      <form name="form1" method="POST" id="form1" action="https://pl.neduet.edu.pk/index.jsp" autocomplete="off" class="h5">
+      
+
+    <table style="table-layout: fixed !important; width:100%;" class="table table-bordered">
+    <tbody><tr align="center">
+    <td id="b2" style="background-color: rgb(214, 228, 241);"><input type="button" class="button2 " value="Undergraduate" onclick="ut(event, &#39;Undergraduate&#39;,&#39;2&#39;)"></td>
+    </tr>
+    </tbody></table>
+
+    <input type="hidden" value="Undergraduate" name="usertype" id="usertype"> 
+    
+    <div id="Undergraduate" class="tabcontent" style="display: block;">
+    <div class="red"> <h1>Undergraduate <i class="fas fa-user-graduate"></i> </h1> </div>
+    <div align="right" class="blue" style="min-width:50px;  padding:5px; border:3px; border-color:#333; background:#F0F0F0;">
+        <label for="text" class="blue"><a href="https://pl.neduet.edu.pk/undergrad/resetpwdmail.jsp" class="blue">Recover Password</a>
+            | 
+            <button class="button3" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Notices</button>
+            </label>
+    </div>
+    <div class="row">
+
+
+
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+
+            <div align="right">
+            <button class="button2" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">[ X ]&nbsp;&nbsp;</button>
+            </div>
+
+    <div class="row text-center">
+      <div class="col-sm-12">
+      
+    <div align="left" class="thumbnail bg-gray">
+      <div class="list-group " style="margin-bottom:0px; !important;">
+      
+        <a href="https://pl.neduet.edu.pk/notices/Latest_Notices_Students.jsp" target="_blank" class="list-group-item" style="padding-top: 9px; !important; padding-bottom: 9px; !important;">
+        <h5 class="blue"><span class="glyphicon glyphicon-hand-right"></span><strong> Latest News</strong></h5>
+        </a>
+
+        <a href="https://pl.neduet.edu.pk/notices/DrAcad_Notices.jsp" target="_blank" class="list-group-item" style="padding-top: 9px; !important; padding-bottom: 9px; !important;">
+        <h5 class="blue"><span class="glyphicon glyphicon-hand-right"></span><strong> Registrar Office</strong></h5>
+        </a>
+
+        <a href="https://pl.neduet.edu.pk/notices/CSA_Notices.jsp" target="_blank" class="list-group-item" style="padding-top: 9px; !important; padding-bottom: 9px; !important;">
+        <h5 class="blue"><span class="glyphicon glyphicon-hand-right"></span><strong> Student Affairs Office</strong></h5>
+        </a>	
+
+        <a href="https://pl.neduet.edu.pk/notices/Examination_Notices.jsp" target="_blank" class="list-group-item" style="padding-top: 9px; !important; padding-bottom: 9px; !important;">
+        <h5 class="blue"><span class="glyphicon glyphicon-hand-right"></span><strong> Examination Department</strong></h5>
+        </a>
+
+        <a href="https://pl.neduet.edu.pk/notices/DIL_Notices.jsp" target="_blank" class="list-group-item" style="padding-top: 9px; !important; padding-bottom: 9px; !important;">
+        <h5 class="blue"><span class="glyphicon glyphicon-hand-right"></span><strong> Directorate of Industrial Liaison</strong></h5>
+        </a>
+
+        
+      </div>
+    </div>
+
+      </div>
+    </div>
+          
+        </div>
+      </div>
+      
+        
+    </div>
+
+    <div style="min-width:50px; float:left; padding:5px; border:3px; border-color:#333;"><label for="text" class="blue"><i class="fas fa-user-graduate"></i> Student ID</label></div>      
+    </div>
+          <div class="form-group">
+              <input name="portal_id" type="text" class="form-control" id="username" value="" placeholder="Enter Portal ID">
+              <br>
+              <label for="pwd" class="blue"><i class="fas fa-lock"></i> Password </label>
+              <input name="pwd_portal" type="password" class="form-control" id="password" value="" placeholder="Enter password">
+
+              <div class="row">
+              <div class="col-sm-7" align="left"><h6 class="blue">( Password is case sensitive )</h6></div> 
+              </div>
+          </div>
+      <div class="form-group">
+
+
+      
+          <label for="pwd" class="blue"><i class="fas fa-image"></i> Image Code </label>
+          <input name="vericode" id="vericode" type="text" class="form-control" autocomplete="off">
+        <br>
+          <div style="width:100%; background-color:#730000;"><center>
+                <div id="txtHint">
+                <img id="captcha_id" class="img-responsive" width="200px" src="./Login Default_files/captchaportal">
+                </div>
+                </center>
+                </div>
+          <div align="center">	  
+          <input class="btn btn-link red" type="button" value="Change Code">
+              
+          </div>
+      
+    <div class="row" align="center">
+    <input type="hidden" value="0" name="hd_stat5" id="hd_stat5">
+   <a href="portal.html"> <input class="btn btn-danger" name="login" type="button" id="login" value="  Login  " onclick="validate()"> </a>
+    <div id="ugmsg" style="display: block;">
+    <br><font size="2">For Registration issues: <a href="mailto:registration.helpdesk@neduet.edu.pk">registration.helpdesk@neduet.edu.pk </a></font>
+      <br><font size="2">For GSuite issues: <a href="mailto:onlineclasses@cloud.neduet.edu.pk">onlineclasses@cloud.neduet.edu.pk</a></font>
+      <br><font size="2">For USMS Password: <a href="mailto:portaladmin@neduet.edu.pk">portaladmin@neduet.edu.pk</a></font>
+    </div>
+    </div>
+    <div class="row" align="center">
+    <br><center><font color="#333333" face="Verdana, Geneva, sans-serif" size="1"><b>Powered by IT Department</b></font></center>
+    </div>
+    </form>
+    </h5>
+    </div>
+    </div>
+    <div class="col-sm-4"></div> 
+    </div>
+  </div>
+    <!-- Login End -->
+    </div>
+    <!-- Footer -->
+    <div class="carousel bg-gray  bordertop" style="background-image:url(https://pl.neduet.edu.pk/images/bottombg.jpg);  border-top-width: 2px; border-top-style: 2; border-top-color:#CCC;">
+      <div class="container">
+        <div class="row">
+          <center>
+            <a href="https://www.neduet.edu.pk/" target="_blank" class="footer1"><i class="fas fa-home"></i>&nbsp;&nbsp;NEDUET</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://mail2.neduet.edu.pk/" target="_blank" class="footer1"> <i class="fas fa-envelope"></i>&nbsp;&nbsp;Email</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.neduet.edu.pk/institutional_policies" target="_blank" class="footer1"><i class="fas fa-list"></i>&nbsp;&nbsp;Institutional Policies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.neduet.edu.pk/quality_policy" target="_blank" class="footer1"><i class="fas fa-list-alt"></i>&nbsp;&nbsp;Quality policy</a>
+          </center>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <script>
+    const validate = (e) => {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            console.log(`user: ${username}`);
+            console.log(`pass: ${password}`);
+            if (username == ''){
+                alert('You need to enter a username.');
+            }
+            if (password == ''){
+                alert('You need to enter a password.');
+            }
+        };
+
+    if(true)
+    {
+    ut('load', 'Undergraduate','2');
+    } 
+
+
+    function ut(evt, t, v) {
+    if(v==2)
+    {
+    document.getElementById('b2').style.backgroundColor='#D6E4F1';
+    document.getElementById('b1').style.backgroundColor='#FFFFFF';
+    document.getElementById('b3').style.backgroundColor='#FFFFFF';
+    document.getElementById("ugmsg").style.display = "block"; 
+    }
+    document.form1.usertype.value = t;
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(t).style.display = "block";
+    }
+    </script>
+
+  </body>
+</html>

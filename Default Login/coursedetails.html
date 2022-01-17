@@ -1,0 +1,103 @@
+<html>
+<style>
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+}
+.logo {
+    padding-left: 10%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.undergrad {
+    font-size: 24px;
+}
+.header {
+    background-color: rgb(194, 59, 35);
+    color: white;
+    display: flex;
+}
+      
+marquee{
+          
+            color: black;
+            font-family: italic;
+            background-color: rgb(234, 220, 245);
+}
+.heading {
+    margin-top: 25px;
+    padding-left: 50px;
+    line-height: 26px;
+    font-size: 32px;
+}
+.footer {
+    background-color: rgb(36, 62, 73);
+    color: white;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h6 {
+    margin: 5px;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+}
+
+.first, .second {
+    width: 50%;
+}
+.mid {
+    
+    margin: 7%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    
+    display: flex;
+    justify-content: center;
+   
+}
+</style>
+      
+<body>
+    <div class="header">
+    <div class="logo"><img class="img-responsive" src="NED_Logo.png" width="128" height="129" /></div>
+    <font face="Calibri Light" size="6" class="heading">
+            NED UNIVERSITY OF ENGINEERING & TECHNOLOGY
+            <br>
+            <font class="undergrad">Undergraduate Students Interface</font>
+        </font>
+    </div>
+    <marquee> <h3>YOU CAN CHECK THE COURSE DETAILS BEFORE SUBMITTING THE COD FORMS</h3></marquee>
+<div class="mid">
+<center>
+    <h1 style="color: brown;">COURSE DETAILS</h1>
+<img id="imageToSwap" src="Capture.JPG"/>
+
+<br/><br/>
+
+<select id="dlist" onChange="swapImage()" style="font-weight:bolder; height:50px; color:red; background-color:rgb(245, 245, 206) ; font-size:large">
+    <br>
+<option value="Capture.jpg">Select Department</option>
+<option value="software.jpg">Software Engineering</option>
+<option value="telecom.jpg">Telecommunications Engineering</option>
+<option value="electronic.jpg">Electronic Engineering</option>
+</select>
+</center>
+</div> 
+<div class="footer">
+    <div class="first"><h6>Powered by IT Department</h6></div>
+    <div class="second" align="right"><h6>Copyright 2017, NED University of Engineering & Technology. All Rights Reserved.</h6></div>
+</div>
+
+<script type="text/javascript">
+function swapImage(){
+	var image = document.getElementById("imageToSwap");
+	var dropd = document.getElementById("dlist");
+	image.src = dropd.value;	
+};
+</script>
+</body>
+</html>

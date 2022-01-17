@@ -1,0 +1,320 @@
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+ 
+ 
+  .red{color: #D9534F;}
+  .bg-red { 
+      background-color: #D9534F; /* red A41320 C9302C D9534F C23824*/
+      color: #ffffff;
+  }
+
+  .bg-light-red { 
+      background-color: #F4CBCA; /* red A41320 C9302C D9534F C23824*/
+
+  }
+
+  .border-red{ border:solid 2px #D9534F;}
+    .border-white{ border:solid 2px #FFFFFF;}
+
+.border-top{ border:solid 2px #898888;}
+ 
+  .blue{color: #337AB7;}
+  .bg-blue {
+	   background-color: #337AB7;
+	color: #ffffff;
+  }
+
+  .bg-light-blue { 
+      background-color: #D6E4F1; /* Blue 337AB7 286090*/
+  }
+
+
+  .border-blue{ border:solid 2px #337AB7;}
+  
+
+  .gray{color: #666666;}
+  .bg-gray { 
+      background-color: #666666; /* Blue */
+      color: #ffffff;
+}
+  
+  .light-gray { 
+      color: #E0E0E0; /* light_gray */      
+ }     
+
+
+  .bg-light-gray { 
+      background-color: #E0E0E0; /* light_gray */      
+ }     
+      
+  
+  .border-gray{ border:solid 1px #666666;}
+
+
+
+  .white{color: #ffffff;}
+  .bg-white { 
+      background-color: #f9f9f9; /* White */
+      color: #666666;
+  }
+
+  .border-light{ border:solid 2px #DAD9D9;}
+
+
+
+
+.opacity5{opacity: 0.5;}
+.opacity1{opacity: 1;}
+ 
+
+.fit-image{
+width: 100%;
+object-fit: cover;
+height: 100px; /* only if you want fixed height */
+}
+
+a.footer1:link {
+	color: #FF822F;
+	text-decoration: none;
+	font-weight:800;
+	font-family:Verdana, Geneva, sans-serif;
+			font-size:15px;
+}
+a.footer1:visited {
+	color: #FF822F;
+	text-decoration: none;
+	font-weight:800;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:15px;
+}
+a.footer1:hover {
+	color: #FFCC00;
+	text-decoration: none;
+	font-weight:800;
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:15px;
+}
+a.footer1:active {
+	color: #FF822F;
+	text-decoration: none;
+	font-weight:800;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:15px;
+}
+
+
+a.footer:link {
+	color: #C4C4C4;
+	text-decoration: none;
+}
+a.footer:visited {
+	color: #C4C4C4;
+	text-decoration: none;
+}
+a.footer:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.footer:active {
+	color: #C4C4C4;
+	text-decoration: none;
+}
+
+a.header_text1:link {
+	color: #FFCC00;
+	text-decoration: none;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:13px;
+}
+a.header_text1:visited {
+	color: #FFCC00;
+	text-decoration: none;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:13px;
+}
+a.header_text1:hover {
+	color: #ffffff;
+	text-decoration: none;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:13px;
+}
+a.header_text1:active {
+	color: #FFCC00;
+	text-decoration: none;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:13px;
+}
+
+
+a.header_text2:link {
+	color: #FFCC00;
+	text-decoration: none;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:13px;
+}
+a.header_text2:visited {
+	color: #FFCC00;
+	text-decoration: none;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:13px;
+}
+a.header_text2:hover {
+	color: #ffffff;
+	text-decoration: none;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:13px;
+}
+a.header_text2:active {
+	color: #FFCC00;
+	text-decoration: none;
+		font-family:Verdana, Geneva, sans-serif;
+				font-size:13px;
+}
+
+
+a.db:link {
+	color: #666 !important;
+	text-decoration: none;
+}
+a.db:visited {
+	color: #666 !important;
+	text-decoration: none;
+}
+a.db:hover {
+	color: #D9534F !important;
+	text-decoration: none; 
+
+  
+}
+a.db:active {
+	color: #999 !important;
+	text-decoration: none;
+}
+
+
+
+
+a.bluelink:link {
+	color: #337AB7 !important;
+	text-decoration: none;
+}
+a.bluelink:visited {
+	color: #337AB7 !important;
+	text-decoration: none;
+}
+a.bluelink:hover {
+	color: #D9534F !important;
+	text-decoration: none; 
+
+  
+}
+a.bluelink:active {
+	color: #337AB7 !important;
+	text-decoration: none;
+}
+
+
+
+a.top:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.top:visited {
+	color: #ffffff;
+	text-decoration: none;
+
+}
+a.top:hover {
+	color: #cccccc;
+	text-decoration: none; 
+	background-color:#D9534F  !important;
+    
+}
+a.top:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+
+a.top2:link {
+	color: #cccccc;
+	text-decoration: none; 
+}
+a.top2:visited {
+	color: #cccccc;
+	text-decoration: none;
+
+}
+a.top2:hover {
+	color: #cccccc;
+	text-decoration: none; 
+	background-color:#D9534F  !important;
+    
+}
+a.top2:active {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+
+a.top-sub:link {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.top-sub:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+a.top-sub:hover {
+	color: #ffffff;
+	text-decoration: none;
+    
+}
+a.top-sub:active {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+
+
+/*
+#w a:link, a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#w a:link:active, a:visited:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+ */
+ 
+/*--
+.white_color	{color:#FFFFFF;}
+.gray_color		{color:#666666;}
+.blue_color		{color:#337AB7;}
+.orange_color	{color:#DB6541;}
+.green_color    {color:#47956E;}
+--*/
+.headerbar {
+	background-image: url(https://pl.neduet.edu.pk/images/headerbar.jpg);
+	background-repeat: repeat-x;
+}
+.bordertop {
+	border-top-width: 2px;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: 2;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #FFF;
+}
